@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
+
+body {
+  background-color: #edf2f6;
+  font-size: 13px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.shadow-sm {
+  box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+.box.border {
+  border: 1px solid #fff !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eaebec !important;
+}
+
+.tabs-line-tab .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1rem !important;
+  color: #888da8;
+  position: relative;
+}
+
+.tabs-line-tab .nav-link.active {
+  color: #5ccad3;
+}
+
+.tabs-line-tab .nav-link.active:after {
+  content: "";
+  background: linear-gradient(135deg, #5ccad3, #0078a5);
+  height: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+}
+
+div,
+a {
+  outline: none !important;
+}
+
+.dropdown-list-image {
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.dropdown-list-image img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.dropdown-list-image .status-indicator {
+  background-color: #eaecf4;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 0.125rem solid #fff;
+}
+
+.form-control,
+.btn {
+  font-size: 13px;
+}
+
+.tabs-share-post textarea {
+  resize: none;
+}
+
+.btn-light {
+  background-color: rgba(92, 202, 211, 0.2);
+  border: 1px solid #5ccad3;
+  color: #5ccad3;
+}
+
+.btn-light:hover,
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:visited {
+  background-color: rgba(92, 202, 211, 0.2);
+  border: 1px solid #46b5bd;
+  box-shadow: 0 0 5px rgba(92, 202, 211, 0.5);
+  color: #5ccad3;
+}
+
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.btn-light:focus {
+  background-color: rgba(92, 202, 211, 0.2);
+  border: 1px solid #5ccad3;
+  color: #5ccad3;
+  box-shadow: 0 0 5px rgba(92, 202, 211, 0.5);
+}
+
+.btn-primary {
+  background-color: #5ccad3;
+  border: 1px solid #5ccad3;
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:visited {
+  background-color: #46b5bd;
+  border: 1px solid #46b5bd;
+  box-shadow: 0 0 5px rgba(92, 202, 211, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:focus {
+  background-color: #5ccad3;
+  border: 1px solid #5ccad3;
+  box-shadow: 0 0 5px rgba(92, 202, 211, 0.5);
+}
+
+.progress-loading {
+  height: 15vh;
+  display: none;
+}
+
+.progress-loading.active {
+  display: flex;
+  align-items: center;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}

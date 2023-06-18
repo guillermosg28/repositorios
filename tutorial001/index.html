@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="py-4 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="box shadow-sm border rounded bg-white mb-3 tabs-share-post">
+              <ul class="nav nav-justified border-bottom tabs-line-tab" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                    <i class="fa-regular fa-pen-to-square"></i> Compartir publicación
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                    <i class="fa-regular fa-image"></i> Subir foto
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                    <i class="fa-regular fa-clipboard"></i> Escribir artículo
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <div class="progress-loading">
+                  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                  </svg>
+                </div>
+              </div>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="p-3 d-flex align-items-center w-100" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="/images/profile.png" alt="" />
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="w-100">
+                      <textarea id="textArea" placeholder="¿Qué estás pensando?..." class="form-control border-0 p-0 shadow-none" rows="2"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="p-3 w-100">
+                    <textarea id="textArea" placeholder="¿Qué estás pensando?..." class="form-control border-0 p-0 shadow-none" rows="2"></textarea>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="p-3 w-100">
+                    <textarea id="textArea" placeholder="Escribir un artículo..." class="form-control border-0 p-0 shadow-none" rows="2"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="border-top p-3 d-flex justify-content-end">
+                <div class="flex-shrink-1">
+                  <button type="button" class="btn btn-light btn-sm">Vista previa</button>
+                  <button id="publish-button" type="button" class="btn btn-primary btn-sm">Publicar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
