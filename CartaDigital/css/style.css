@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,700");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700");
+
+body {
+    color: #666666;
+    background-color: #fefefe;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+
+h3{
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-family: "Oleo Script Swash Caps", cursive;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.menu-img{
+    max-width: 200px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: #111111;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+}
+
+.text-primary {
+    color: #896b45 !important;
+}
+
+.food-title{
+    margin-top: 30px;
+}
+.pull-right{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
