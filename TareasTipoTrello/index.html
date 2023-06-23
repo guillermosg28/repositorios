@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Tablero tipo trello</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./libs/dragula/dragula.min.css" />
+    <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+          <div class="card">
+              <div class="card-body p-4">
+                  <div class="border-bottom pb-4 mb-4">
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <div class="d-flex">
+                                  <div class="flex-grow-1">
+                                      <h5 class="font-size-16 mb-1">Lista de tareas</h5>
+                                      <p class="text-muted mb-0">Mis actividades personales</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div><!-- end row -->
+                  </div>
+                  <div class="task-board">
+                      <div class="task-list">
+                          <div class="card bg-light shadow-none h-100">
+                              <div class="card-header bg-transparent border-bottom d-flex align-items-start">
+                                  <div class="flex-grow-1">
+                                      <h4 class="card-title mb-0">Por hacer <span class="ml-1 text-muted">(03)</span></h4>
+                                  </div>
+                              </div><!-- end card-header -->
+
+                              <div>
+                                  <div data-simplebar class="tasklist-content p-3">
+                                      <div id="todo-task" class="tasks">
+                                          <div class="card task-box">
+                                              <div class="card-body">
+                                                  <h5 class="font-size-14 mb-1">App mensajes</h5>
+  
+                                                  <p class="text-muted text-truncate">Diseñar el login</p>
+  
+                                                  <div class="avatar-group">
+                                                      <div class="avatar-group-item">
+                                                          <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Contacto: Guillermo">
+                                                              <div class="avatar-sm">
+                                                                  <div class="avatar-title rounded-circle bg-primary">
+                                                                      G
+                                                                  </div>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="card-footer bg-transparent border-top d-flex">
+                                                  <div class="flex-grow-1">
+                                                      <div class="font-size-13 text-muted">20 Junio, 2023</div>
+                                                  </div>
+                                                  <div class="flex-shrink-0 ms-2">
+                                                      <span class="badge badge-soft-primary font-size-12">Open</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- end task card -->
+      
+                                          <div class="card task-box">
+                                              <div class="card-body">
+                                                  <h5 class="font-size-14 mb-1">App colegios</h5>
+  
+                                                  <p class="text-muted text-truncate">Subir notas del primer bimestre</p>
+  
+                                                  <div class="avatar-group">
+                                                      <div class="avatar-group-item">
+                                                          <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Contacto: Jose">
+                                                              <div class="avatar-sm">
+                                                                  <div class="avatar-title rounded-circle bg-info">
+                                                                      J
+                                                                  </div>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- end cardbody -->
+                                              <div class="card-footer bg-transparent border-top d-flex">
+                                                  <div class="flex-grow-1">
+                                                      <div class="font-size-13 text-muted">20 Junio, 2023</div>
+                                                  </div>
+                                                  <div class="flex-shrink-0 ms-2">
+                                                      <span class="badge badge-soft-primary font-size-12">Open</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- end task card -->
+      
+                                          <div class="card task-box">
+                                              <div class="card-body">
+                                                  <h5 class="font-size-14 mb-1">UI/UX Clinica</h5>
+  
+                                                  <p class="text-muted text-truncate">Diseñar la App para la clinica</p>
+  
+                                                  <div class="avatar-group">
+                                                      <div class="avatar-group-item">
+                                                          <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Contacto: Gisselle">
+                                                              <div class="avatar-sm">
+                                                                  <div class="avatar-title rounded-circle bg-danger">
+                                                                      G
+                                                                  </div>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="card-footer bg-transparent border-top d-flex">
+                                                  <div class="flex-grow-1">
+                                                      <div class="font-size-13 text-muted">20 Junio, 2023</div>
+                                                  </div>
+                                                  <div class="flex-shrink-0 ms-2">
+                                                      <span class="badge badge-soft-primary font-size-12">Open</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- end task card -->
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                      <!-- end tasklist -->
+
+                      <div class="task-list">
+                          <div class="card bg-light shadow-none h-100">
+                              <div class="card-header bg-transparent border-bottom d-flex align-items-start">
+                                  <div class="flex-grow-1">
+                                      <h4 class="card-title mb-0">En progeso <span class="ml-1 text-muted">(01)</span></h4>
+                                  </div>
+                              </div>
+
+                              <div>
+                                  <div data-simplebar class="tasklist-content p-3">
+                                      <div id="inprogress-task" class="tasks">
+                                          <div class="card task-box">
+                                              <div class="card-body">
+                                                  <h5 class="font-size-14 mb-1">App colegios</h5>
+  
+                                                  <p class="text-muted text-truncate">Subir carga lectiva</p>
+  
+                                                  <div class="avatar-group">
+                                                    <div class="avatar-group-item">
+                                                        <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Contacto: Gisselle">
+                                                            <div class="avatar-sm">
+                                                                <div class="avatar-title rounded-circle bg-danger">
+                                                                    G
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="card-footer bg-transparent border-top d-flex">
+                                                  <div class="flex-grow-1">
+                                                      <div class="font-size-13 text-muted">20 Junio, 2023</div>
+                                                  </div>
+                                                  <div class="flex-shrink-0 ms-2">
+                                                      <span class="badge badge-soft-warning font-size-12">Inprogress</span>
+                                                  </div>
+                                              </div><!-- end card-footer -->
+                                          </div><!-- end task card -->
+                                      </div>
+                                  </div><!-- end data - simplebar -->
+                              </div>
+                          </div><!-- end card -->
+                      </div><!-- end tasklist -->
+
+                      <div class="task-list">
+                          <div class="card bg-light shadow-none h-100">
+                              <div class="card-header bg-transparent border-bottom d-flex align-items-start">
+                                  <div class="flex-grow-1">
+                                      <h4 class="card-title mb-0">Completados <span class="ml-1 text-muted">(02)</span></h4>
+                                  </div>
+                              </div>
+
+                              <div>
+                                  <div data-simplebar class="tasklist-content p-3">
+                                      <div id="completed-task" class="tasks">
+                                          <div class="card task-box">
+                                              <div class="card-body">
+                                                  <h5 class="font-size-14 mb-1">Video TikTok</h5>
+  
+                                                  <p class="text-muted text-truncate">Tutorial de docker con wordpress</p>
+                                                  <div class="avatar-group">
+                                                      <div class="avatar-group-item">
+                                                          <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Proyecto personal">
+                                                              <div class="avatar-sm">
+                                                                  <div class="avatar-title rounded-circle bg-info">
+                                                                      G
+                                                                  </div>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                                  
+                                              </div>
+                                              <div class="card-footer bg-transparent border-top d-flex">
+                                                  <div class="flex-grow-1">
+                                                      <div class="font-size-13 text-muted">18 Junio, 2023</div>
+                                                  </div>
+                                                  <div class="flex-shrink-0 ms-2">
+                                                      <span class="badge badge-soft-success font-size-12">Completed</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- end task card -->
+      
+                                          <div class="card task-box">
+                                              <div class="card-body">
+                                                  <h5 class="font-size-14 mb-1">UI/UX blog personal</h5>
+  
+                                                  <p class="text-muted text-truncate">Crear un blog personal</p>
+  
+                                                  <div class="avatar-group">
+                                                      <div class="avatar-group-item">
+                                                          <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Proyecto personal">
+                                                              <div class="avatar-sm">
+                                                                  <div class="avatar-title rounded-circle bg-primary">
+                                                                      G
+                                                                  </div>
+                                                              </div>
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="card-footer bg-transparent border-top d-flex">
+                                                  <div class="flex-grow-1">
+                                                      <div class="font-size-13 text-muted">15 Junio, 2023</div>
+                                                  </div>
+                                                  <div class="flex-shrink-0 ms-2">
+                                                      <span class="badge badge-soft-success font-size-12">Completed</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- end task card -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div><!-- end tasklist -->
+                      
+                  </div>
+              </div><!-- end card body -->
+          </div><!-- end  -->
+      </div><!-- end col -->
+  </div><!-- end row -->
+</div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/dragula/dragula.min.js"></script>
+    <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script>
+      [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')).map(function(e){
+  return new bootstrap.Tooltip(e)
+});
+      dragula([document.getElementById("todo-task"),document.getElementById("inprogress-task"),document.getElementById("completed-task")]);
+    </script>
+  </body>
+</html>
